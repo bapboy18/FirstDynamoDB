@@ -1,0 +1,9 @@
+development: &development
+  :access_key_id: x
+  :secret_access_key: y
+  :region: "localhost"
+  :dynamodb:
+    :endpoint: "http://localhost:8000"
+
+test:
+  <<: *development
